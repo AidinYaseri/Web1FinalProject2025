@@ -1,0 +1,50 @@
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Map container */
+.map-container {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Map image styling */
+.map-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Building buttons */
+.building {
+  position: absolute; /* Needed for top/left positioning */
+  transform: translate(-50%, -50%);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  color: white;
+
+  /* Text outline for visibility */
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222,
+    1px 1px 0 #222;
+
+  /* Remove button styling */
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  /* Reset browser default button look */
+  appearance: none;
+  -webkit-appearance: none;
+}

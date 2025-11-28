@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Cook</title>
+    <link rel="stylesheet" href="player-selection.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+     defer></script>
+     
+    <script type="module" src="player-selection.js" defer></script>
+  </head>
+  <body>
+    <audio
+      id="bgMusic"
+      src="assets/The Simpsons.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <img
+      id="background"
+      src="assets/background.webp"
+      alt="Breaking Bad Background"
+    />
+    <h1>Choose Your Player</h1>
+
+    <form
+      id="fighterForm"
+      action="absolute-monopoly.html"
+      method="GET"
+      enctype="multipart/form-data"
+    >
+      <div class="fighter-container">
+        <!-- Guest Player -->
+        <div class="fighter-card guest" data-player="guest">
+          <div class="avatar upload-preview" id="preview"></div>
+
+          <div class="inputs">
+            <input type="file" id="imageUpload" accept="image/*" />
+          </div>
+
+          <div class="inputs">
+            <input type="text" id="guestName" placeholder="Guest Name" />
+            <input type="number" id="guestAge" placeholder="Age" min="16" />
+          </div>
+
+          <div class="stats">
+            <p>STATS</p>
+            <select id="resilience">
+              <option value="">Select resilience</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <select id="exhaustion">
+              <option value="">Select exhaustion</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            <select id="defense">
+              <option value="">Select defense</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="start-btn">Start Game</button>
+    </form>
+  </body>
+</html>

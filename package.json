@@ -1,0 +1,23 @@
+{
+  "name": "01-ready-player-one-aidinyaseri",
+  "version": "1.0.0",
+  "description": "An assignment for Web Programming l",
+  "main": "player.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poggie-Teaching-Web-At-JAC/01-ready-player-one-AidinYaseri.git"
+  },
+  "author": "Aidin Yaseri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poggie-Teaching-Web-At-JAC/01-ready-player-one-AidinYaseri/issues"
+  },
+  "homepage": "https://github.com/Poggie-Teaching-Web-At-JAC/01-ready-player-one-AidinYaseri#readme",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

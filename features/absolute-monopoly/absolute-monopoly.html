@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Monopoly</title>
+    <link rel="stylesheet" href="absolute-monopoly.css" />
+     <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+     defer></script>
+    <script type="module" src="absolute-monopoly.js" defer></script>
+  </head>
+  <body>
+    <a href="../main-menu/main-menu.html" class="character-icon" title="Choose Character">
+  <img alt="Select Character" />
+</a>
+    <h1>Absolute Monopoly</h1>
+
+    <div class="monopoly-container">
+      <img
+        id="background"
+        src="./assets/nuclear-plant_0.png"
+        alt="Breaking Bad Background"
+      />
+      <div class="player-card" data-player="player2">
+        <img class="avatar" id="player2Avatar" src="" alt="Player 2 Avatar" />
+        <h2 id="player2Id">Player 2</h2>
+        <div class="stats">
+          <p>STATS</p>
+          <ul>
+            <li id="player2Resilience">Resilience: --</li>
+            <li id="player2Exhaustion">Exhaustion: --</li>
+            <li id="player2Defense">Defense: --</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="business-panel">
+        <button class="main-btn">Make Item</button>
+
+        <div class="section">
+          <h3>BUSINESS</h3>
+          <p id="funds">Available Funds: $_____</p>
+          <p id="unsold">Unsold Inventory: _____</p>
+          <p id="demand">Public Demand: ___%</p>
+          <div class="price-controls">
+            <p id="ppi">Price per Item:</p>
+            <button id="priceDown">-</button>
+            <button id="priceUp">+</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>MANUFACTURING</h3>
+          <p id="cps">Items per Second: _____</p>
+          <p id="rawMaterial">Remaining Raw Material: _____</p>
+          <button id="buyWire">Purchase ($____)</button>
+          <p id="factoriesDisplay">Factories: _____</p>
+          <button id="buyFactory">Purchase ($____)</button>
+        </div>
+      </div>
+
+      <div class="npc-section">
+        <div class="speech-bubble">skill issue</div>
+        <img src="./assets/mr-burns.jpg" alt="Gus Fring" class="npc"></img>
+      </div>
+    </div>
+  </body>
+</html>

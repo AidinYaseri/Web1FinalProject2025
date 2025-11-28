@@ -1,0 +1,92 @@
+/* ---------- GLOBAL ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#background {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+h1, h2, h3 {
+  margin-top: 1em;
+  font-weight: normal;
+}
+
+/* ---------- FIGHTER SELECTION PAGE ---------- */
+.fighter-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+
+.fighter-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 1em;
+  width: 220px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fighter-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+.fighter-card.selected {
+  border: 3px solid gold;
+  box-shadow: 0 0 15px gold;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.upload-preview {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  margin: 0 auto 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.inputs {
+  margin: 0.5em 0;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background: gold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2em;
+  transition: 0.2s;
+}
+
+.start-btn:hover {
+  background: orange;
+}
