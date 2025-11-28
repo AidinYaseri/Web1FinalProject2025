@@ -1,7 +1,7 @@
 # Soccer Score keeper - Final Project Web 1 2025
 > December 2025
 
-Project bio
+My project consists of a webpage displaying current and and past soccer games with their scores. The games could be found via a calendar inside the webpage.
 
 **👉 Live Site:** https://your-live-site-url.com (Github verification Not over yet )
 
